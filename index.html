@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,128 +12,116 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <h1>Payment form example</h1>
+        <h1>Payment form example</h1>
 
-    <div class="alert">
-        Some fields are missing
+        <div class="alert">
+            Some fields are missing
+        </div>
+
+        <form>
+
+            <div class="row">
+                <div class="field">
+                    <label>Card #</label>
+                    <input type="text" placeholder="XXXXXXXXXXXXXXXX">
+                </div>
+
+                <div class="field">
+                    <label>CVC #</label>
+                    <input type="text" placeholder="000">
+                </div>
+
+                <div class="field">
+                    <label>Amount</label>
+                    <input type="text" placeholder="Amount">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text">
+                </div>
+
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="field">
+                    <label>City</label>
+                    <input type="text">
+
+                    <div class="we-accept">
+                        <span>We accept:</span>
+
+                        <div class="cards">
+                            <label>
+                                <input type="radio" name="card" checked>
+                                <i class="fa-brands fa-cc-visa"></i>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="card">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="card">
+                                <i class="fa-brands fa-cc-amex"></i>
+                            </label>
+
+                            <label>
+                                <input type="radio" name="card">
+                                <i class="fa-brands fa-cc-paypal"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+
+                    <div class="sub-row">
+                        <div class="field">
+                            <label>State</label>
+                            <select required>
+                                <option value="" disabled selected>Pick a state</option>
+                                <option>Madrid</option>
+                                <option>Barcelona</option>
+                                <option>Malaga</option>
+                                <option>Sevilla</option>
+                                <option>Cadiz</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Postal Code</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <label>Message</label>
+                    <textarea></textarea>
+                    <small style="color:#777;">Add any notes here.</small>
+
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <button type="button">Cancel</button>
+                <button type="submit">Send</button>
+            </div>
+
+        </form>
+
     </div>
 
-    <form>
-
-       
-        <div class="row">
-
-            <div class="field">
-                <label>Card #</label>
-                <input type="text" placeholder="XXXXXXXXXXXXXXXX">
-            </div>
-
-            <div class="field">
-                <label>CVC #</label>
-                <input type="text" placeholder="000">
-            </div>
-
-            <div class="field">
-                <label>Amount</label>
-                <input type="text" placeholder="Amount">
-            </div>
-
-        </div>
-
-        
-        <div class="row">
-
-            <div class="field">
-                <label>First Name</label>
-                <input type="text">
-            </div>
-
-            <div class="field">
-                <label>Last Name</label>
-                <input type="text">
-            </div>
-
-        </div>
-
-       
-        <div class="row">
-
-            
-            <div class="field">
-
-                <label>Ciudad</label>
-                <input type="text">
-
-                <div class="we-accept">
-
-                    <span>We we accept:</span>
-
-                    <div class="cards">
-
-                        <label>
-                            <input type="radio" name="card" checked>
-                            <i class="fa-brands fa-cc-visa"></i>
-                        </label>
-
-                        <label>
-                            <input type="radio" name="card">
-                            <i class="fa-brands fa-cc-mastercard"></i>
-                        </label>
-
-                        <label>
-                            <input type="radio" name="card">
-                            <i class="fa-brands fa-cc-amex"></i>
-                        </label>
-
-                        <label>
-                            <input type="radio" name="card">
-                            <i class="fa-brands fa-cc-paypal"></i>
-                        </label>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-          
-            <div class="field">
-
-                <div class="sub-row">
-
-                    <div class="field">
-                        <label>City</label>
-                        <select>
-                            <option>Pick a state</option>
-                        </select>
-                    </div>
-
-                    <div class="field">
-                        <label>Postal Code</label>
-                        <input type="text">
-                    </div>
-
-                </div>
-
-                <label>Message</label>
-                <textarea></textarea>
-                <small style="color:#777;">Add any notes here.</small>
-
-            </div>
-
-        </div>
-
-        
-        <div class="buttons">
-            <button type="button">Cancel</button>
-            <button type="submit">Send</button>
-        </div>
-
-    </form>
-
-</div>
-
 </body>
+
 </html>
